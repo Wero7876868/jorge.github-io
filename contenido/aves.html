@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Article Details</title>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style_aves.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<article>
+	<header style="background-image: url('https://images.unsplash.com/photo-1520808663317-647b476a81b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2073&q=80');">
+		<div class="upper-header">
+			<div class="mini-title">Articulo</div>
+			<div class="date-since">
+				<p><span class="date-value" id="sinceData"></span></p>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+					<defs>
+						<style>
+							.d {
+								width: 20px;
+								fill: #fff;
+								opacity: .5;
+							}
+						</style>
+					</defs>
+					<path class="d" d="M15,0C6.75,0,0,6.75,0,15s6.75,15,15,15,15-6.75,15-15S23.25,0,15,0Zm7.35,16.65h-7.35c-.83,0-1.5-.67-1.5-1.5V7.8c0-.9,.6-1.5,1.5-1.5s1.5,.6,1.5,1.5v5.85h5.85c.9,0,1.5,.6,1.5,1.5s-.6,1.5-1.5,1.5Z" />
+				</svg>
+			</div>
+		</div>
+		<div class="lower-header">
+			<div class="tags-container">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+					<defs>
+						<style>
+							.d {
+								width: 20px;
+								fill: #fff;
+								opacity: .75;
+							}
+						</style>
+					</defs>
+					<path class="d" d="M19.22,9.66L10.77,1.21c-.74-.74-1.86-1.21-2.97-1.21H1.67C.75,0,0,.75,0,1.67V7.8c0,1.11,.46,2.23,1.3,2.97l8.45,8.46c1,1,2.62,1,3.62,0l5.94-5.95c.93-.93,.93-2.6-.09-3.62ZM6.96,6.35c-.59,.59-1.56,.59-2.15,0-.59-.59-.59-1.56,0-2.15,.59-.59,1.56-.59,2.15,0,.59,.59,.59,1.56,0,2.15Z" />
+				</svg>
+				<span>Animales</span><span>Salvajes</span>
+			</div>
+			<h1 class="title">Aves, Aves, Aves!</h1>
+			<p class="subtitle">Un búho es el más sabio de todas las aves porque cuanto más ve, menos habla</p>
+		</div>
+	</header>
+	<section class="summary">
+		<div class="summary-item">
+			<h5 class="item-title">Tiempo de lectura</h5>
+			<p class="item-text"><span class="item-data">2</span> Mins</p>
+		</div>
+		<div class="summary-item">
+			<h5 class="item-title">Vistas</h5>
+			<p class="item-text"><span class="item-data">1288</span> Vistas</p>
+		</div>
+		<div class="summary-item">
+			<h5 class="item-title">Dia de publicacion</h5>
+			<p class="item-text"><span class="item-data" id="dateData"></span></p>
+		</div>
+	</section>
+	<section class="main-article">
+		<h4>¿Qué son las aves?</h4>
+		<p>Las aves son un grupo de animales caracterizados por tener un cuerpo cubierto de plumas, alas y patas como extremidades y un pico. Son animales vertebrados lo cual significa que poseen una columna vertebral y esqueleto que le da forma a sus cuerpos.</p>
+		<br><h4>¿Qué tipo de animales son las aves?</h4>
+		<p>Las aves son animales vertebrados, que caminan, saltan o se mantienen solo sobre las extremidades posteriores. Las extremidades anteriores están modificadas como alas, lo que les permite volar en la mayoría de casos. Aunque no todas vuelan.		</p>
+		<div class="gallery">
+			<div class="gallery-mask mask-off">
+				<img class="mask-image" src="" alt="" width="200">
+			</div>
+			<div class="image-item image-1" alt="" width="200" style="background-image: url('https://images.unsplash.com/photo-1551668231-6a07c2b7d544?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1777&q=80');"></div>
+			<div class="image-item image-2" alt="" width="200" style="background-image: url('https://images.unsplash.com/photo-1605092675701-0dafa674328e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80');"></div>
+			<div class="image-item image-3" alt="" width="200" style="background-image: url('https://images.unsplash.com/photo-1604946591005-c481923435b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80');"></div>
+			<div class="image-item image-4" alt="" width="200" style="background-image: url('https://images.unsplash.com/photo-1603741583823-e588bae552b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80');"></div>
+			<div class="image-item image-5" alt="" width="200" style="background-image: url('https://images.unsplash.com/photo-1618611157876-3517925c6285?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');"></div>
+		</div>
+		<h4>¿Cómo se clasifican las aves?</h4>
+		<p>Las aves paseriformes, psitaciformes y falconiformes son voladoras no nadadoras. Los kiwis y los kakapos son aves rastreras no voladoras. Los avestruces, los emús, los ñandúes y los casuarios son aves corredoras no voladoras. Los pingüinos son aves nadadoras no voladoras.</p>
+		<h4>¿Cuáles son las funciones de las aves?</h4>
+		<p>Las aves tienen funciones vitales para nuestros #ecosistemas, como dispersar semillas o regular las poblaciones de insectos. Además, poseen coloridos plumajes y cautivadores cantos, que se convierten en verdaderas obras de arte de nuestra naturaleza para admirar y preservar.</p>
+</section>
+</article>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js'></script><script  src="./script_aves.js"></script>
+
+</body>
+</html>
