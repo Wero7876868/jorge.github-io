@@ -1,0 +1,204 @@
+﻿<html>
+<head>
+    <title>Tipos De Animales</title>
+    <link rel="stylesheet" href="estilo2.css">
+    <style>
+li{color:rgb(255, 255, 255);}
+</style>
+</head>
+<style>
+  body {
+    background-image:url('123456.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>
+<body>
+
+
+    <body onload="doWave(0)" style="font-family: Verdana"> 
+        <p align="center"><b>
+        <script language="JavaScript">
+        
+        //put your text here
+        var theText = "TIPOS DE ANIMALES";
+        
+        function nextSize(i,incMethod,textLength)
+        {   
+        if (incMethod == 1) return (72*Math.abs( Math.sin(i/(textLength/3.14))) );
+        if (incMethod == 2) return (255*Math.abs( Math.cos(i/(textLength/3.14))));
+        }
+        
+        function sizeCycle(text,method,dis)
+        {
+            output = "";
+            for (i = 0; i < text.length; i++)
+            {
+                size = parseInt(nextSize(i +dis,method,text.length));
+                output += "<font style='font-size: "+ size +"pt'>" +text.substring(i,i+1)+ "</font>";
+            }
+            theDiv.innerHTML = output;
+        }
+        
+        function doWave(n) 
+        {   
+            sizeCycle(theText,1,n);
+            if (n > theText.length) {n=0}
+            setTimeout("doWave(" + (n+1) + ")", 100);
+        }
+        </script>
+        </b></p>
+        <div ID="theDiv" align="center">
+        
+        </div>
+        
+         
+        </body>
+<nav>
+	<a href="#es">¿Qué es?</a>
+	<a href="#Componentes">Componentes</a>
+	<a href="#t">Tipos</a>
+	<div class="animation start-home"></div>
+</nav>
+    <a name="es"></a>
+<center><font color="white">
+    <p align="center"><font face="Verdana"><b></b></font></p>
+    <script language="JavaScript1.2">
+    
+    /*
+    Nudging text by Matthias (info@freejavascripts.f2s.com)
+    Modified by Dynamic Drive to function in NS6
+    For this script and more, visit http://www.dynamicdrive.com
+    */
+    
+    //configure message
+    message="¿Qué es?"
+    //animate text in NS6? (0 will turn it off)
+    ns6switch=1
+    
+    var ns6=document.getElementById&&!document.all
+    mes=new Array();
+    mes[0]=-1;
+    mes[1]=-4;
+    mes[2]=-7;mes[3]=-10;
+    mes[4]=-7;
+    mes[5]=-4;
+    mes[6]=-1;
+    num=0;
+    num2=0;
+    txt="";
+    function jump0(){
+    if (ns6&&!ns6switch){
+    jump.innerHTML=message
+    return
+    }
+    if(message.length > 6){
+    for(i=0; i != message.length;i++){
+    txt=txt+"<span style='position:relative;' id='n"+i+"'>"+message.charAt(i)+"</span>"};
+    jump.innerHTML=txt;
+    txt="";
+    jump1a()
+    }
+    else{
+    alert("Your message is to short")
+    }
+    }
+    
+    function jump1a(){
+    nfinal=(document.getElementById)? document.getElementById("n0") : document.all.n0
+    nfinal.style.left=-num2;
+    if(num2 != 9){
+    num2=num2+3;
+    setTimeout("jump1a()",50)
+    }
+    else{
+    jump1b()
+    }
+    }
+    
+    function jump1b(){
+    nfinal.style.left=-num2;
+    if(num2 != 0){num2=num2-3;
+    setTimeout("jump1b()",50)
+    }
+    else{
+    jump2()
+    }
+    }
+    
+    function jump2(){
+    txt="";
+    for(i=0;i != message.length;i++){
+    if(i+num > -1 && i+num < 7){
+    txt=txt+"<span style='position:relative;top:"+mes[i+num]+"'>"+message.charAt(i)+"</span>"
+    }
+    else{txt=txt+"<span>"+message.charAt(i)+"</span>"}
+    }
+    jump.innerHTML=txt;
+    txt="";
+    if(num != (-message.length)){
+    num--;
+    setTimeout("jump2()",50)}
+    else{num=0;
+    setTimeout("jump0()",50)}}
+    </script>
+    </head>
+    <body>
+    
+    <h2><div id="jumpx" style="color:rgb(255, 255, 255)"></div></h2>
+    <script>
+    if (document.all||document.getElementById){
+    jump=(document.getElementById)? document.getElementById("jumpx") : document.all.jumpx
+    jump0()
+    }
+    else
+    document.write(message)
+    </script></center></font>
+    <p>
+    <h3><font color="black">Un animal es un ser vivo que puede moverse por sus propios medios. Por lo general, dentro de la denominación se incluye a los integrantes del reino conocido como Animalia,existen diversas características compartidas por la mayoría de los animales, aún con sus diferencias,Para que un organismo se clasifique científicamente como animal deben tenerse en cuenta características a nivel celular, morfológico y fisiológico. No existe una definición breve para los animales, así que pasemos de una vez a ello.Los animales son organismos pluricelulares, heterótrofos, con células sin pared celular, con un sistema nervioso capaz de responder a estímulos externos, con células organizadas en tejidos y con la presencia de blástula durante su desarrollo embrionario bajo esta definición se clasifica a los organismos que cumplen con la mencionada descripción bajo el Reino Animalia. La evolución se construye a partir de lo que ya existe y es así como el Reino Animalia es el grupo evolutivamente más nuevo ,este es el reino al final de la historia evolutiva el humano es entonces un animal que depende por completo de los reinos que lo preceden. Dependemos de las plantas, los hongos, las algas y de las bacterias,los primeros animales evolucionaron en el mar durante el período Cámbrico, aproximadamente hace 525 millones de años. El grupo de los animales se trata del reino más grande de todos los seres vivos. La mayoría son animales invertebrados y los más fuertes son cordados.</font></h3>
+<marquee behavior="alternate"></font>
+<img src="LEON.jpg"WIDTH="150"%"><br>
+ </marquee> 
+<H1></H1>
+<p>
+    <hr size="18px" color="black" />
+        <a name="Componentes"></a>
+        <h1><font color="white">Componentes de los animales</font></h1>
+    <p>
+    <h3><font color="white">Para que la fauna silvestre prospere hay 5 componentes básicos que requiere y que el hábitat debe proveer:</font></h3>
+    <p>
+        <ul>
+            <li>Alimento:Todos los animales necesitan alimento para poder seguir con vida.</li>
+<marquee behavior="alternate">
+<img src="ALIMENTO ANIMALES.jpg"WIDTH="150"%"><br>
+ </marquee> 
+            <li>Agua:Todos los animales necesitan agua para poder seguir su vida dia a dia</li>
+<marquee behavior="alternate">
+<img src="AGUA ANIMALES.jpg"WIDTH="150"%"><br>
+ </marquee> 
+          <li>Cubierta:Todos los animales necesitan de cubierta para viajar, descansar, reproducirse, alimentarse y cuidar de sus crías.</li>
+          <marquee behavior="alternate">
+<img src="CUBIERTA ANIMALES.jpg"WIDTH="150"%"><br>
+ </marquee>  
+<li>Espacio:Todos los animales necesitan de un espacio adecuado en una disposición correcta para proveerles el acceso a suficiente comida y agua, suficiente territorio para aparearse y cuidar de sus crías, cubierta o albergue del clima y depredadores y las tensiones sobre reducción que pueden agravar enfermedades relacionadas con el estrés.</li>
+          <marquee behavior="alternate">
+<img src="ESPACIO ANIMALES.jpg."WIDTH="150"%"><br>
+ </marquee>  
+</ul>
+          
+            <hr size="18px" color="black" />
+            <p>
+                
+            <h1><font color="white">Tipos de animales</font></h1><a name="t"></a>
+            <marquee behavior="alternate">
+<img src="19236.jpg"WIDTH="536"%"><br>
+ </marquee> 
+    <p>
+    <h2><font color="white"></h2> <p> <h3>Los principales tipos de animales son los mamíferos, anfibios, reptiles, peces, aves, insectos, artrópodos, crustáceos, moluscos, arácnidos, anélidos y gasterópodos. Su clasificación depende de varias características.</font></h3>
+    <p>
+<h2><font color="white"></h2> <p> <h3>¿Los animales se dividen en vertebrados e invertebrados?
+Si bien los tipos de animales pueden clasificarse en dos grandes grupos (vertebrados e invertebrados), actualmente se utilizan otras formas de clasificación, para dar cuenta de determinadas características; por ejemplo, si poseen un endoesqueleto o un exoesqueleto, por su tipo de sangre o hemolinfa y por la forma en que se gestan.</font></h3>
+    <p>
+                        
+        </body>
+</html>
